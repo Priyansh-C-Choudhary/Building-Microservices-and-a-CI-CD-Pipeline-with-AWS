@@ -39,17 +39,17 @@ We have also been challenged to develop a CI/CD pipeline to automatically deploy
 
 ### Task 1.1: Create an architecture diagram
 
-We will be using the following services:
-Amazon Virtual Private Cloud (Amazon VPC)
-Amazon EC2: Instances, Application Load Balancer, target groups
-AWS CodeCommit: Repository
-AWS CodeDeploy
-AWS CodePipeline: Pipeline
-Amazon Elastic Container Service (Amazon ECS): Services, containers, tasks
-Amazon Elastic Container Registry (Amazon ECR): Repository
-AWS Cloud9 environment
-AWS Identity and Access Management (IAM): Roles
-Amazon Relational Database Service (Amazon RDS)
-Amazon CloudWatch: Logs
+1. We will be using the following services:
+2. Amazon Virtual Private Cloud (Amazon VPC)
+3. Amazon EC2: Instances, Application Load Balancer, target groups
+4. AWS CodeCommit: Repository
+5. AWS CodeDeploy
+6. AWS CodePipeline: Pipeline
+7. Amazon Elastic Container Service (Amazon ECS): Services, containers, tasks
+8. Amazon Elastic Container Registry (Amazon ECR): Repository
+9. AWS Cloud9 environment
+10. AWS Identity and Access Management (IAM): Roles
+11. Amazon Relational Database Service (Amazon RDS)
+12. Amazon CloudWatch: Logs
 
 
