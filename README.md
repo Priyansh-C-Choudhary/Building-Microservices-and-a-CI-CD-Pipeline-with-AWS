@@ -31,3 +31,8 @@ We have been tasked to split the monolithic application into microservices, so t
 
 We have also been challenged to develop a CI/CD pipeline to automatically deploy updates to the production cluster that runs containers, using a blue/green deployment strategy. 
 
+# Approach
+
+![image](https://github.com/user-attachments/assets/e1b14fec-a9e0-4a60-afa8-5e27768883f0)
+
+## R1
