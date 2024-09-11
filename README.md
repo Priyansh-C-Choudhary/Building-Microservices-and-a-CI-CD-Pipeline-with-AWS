@@ -39,7 +39,8 @@ We have also been challenged to develop a CI/CD pipeline to automatically deploy
 
 ### Task 1.1: Create an architecture diagram
 
-1. We will be using the following services:
+We will be using the following services:
+1. AWS Cloud9 environment
 2. Amazon Virtual Private Cloud (Amazon VPC)
 3. Amazon EC2: Instances, Application Load Balancer, target groups
 4. AWS CodeCommit: Repository
@@ -47,9 +48,8 @@ We have also been challenged to develop a CI/CD pipeline to automatically deploy
 6. AWS CodePipeline: Pipeline
 7. Amazon Elastic Container Service (Amazon ECS): Services, containers, tasks
 8. Amazon Elastic Container Registry (Amazon ECR): Repository
-9. AWS Cloud9 environment
-10. AWS Identity and Access Management (IAM): Roles
-11. Amazon Relational Database Service (Amazon RDS)
-12. Amazon CloudWatch: Logs
+9. AWS Identity and Access Management (IAM): Roles
+10. Amazon Relational Database Service (Amazon RDS)
+11. Amazon CloudWatch: Logs
 
 
