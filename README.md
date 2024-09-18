@@ -52,9 +52,11 @@ We will be using the following services:
 10. Amazon Relational Database Service (Amazon RDS)
 11. Amazon CloudWatch: Logs
 
+Below is a basic architectural diagram usinng draw.io
 ![Presentation1](https://github.com/user-attachments/assets/8a3faa48-bb4c-4147-aa61-97fb508b9e7a)
 
 ### Task 1.2: Cost Estimation
+
 
 ## Phase 2: Setup the networking required
 
