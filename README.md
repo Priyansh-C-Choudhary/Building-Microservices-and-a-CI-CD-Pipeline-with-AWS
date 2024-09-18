@@ -52,4 +52,7 @@ We will be using the following services:
 10. Amazon Relational Database Service (Amazon RDS)
 11. Amazon CloudWatch: Logs
 
+## Phase 2: Cost Estimation
+
+## Phase 3: Setup the networking required
 
