@@ -313,6 +313,17 @@ Task 6.2: Create a security group and an Application Load Balancer, and configur
 
 In this task, we will create an Application Load Balancer. we will also define two listeners for the load balancer: one on port 80 and another on port 8080. For each listener, we will then define path-based routing rules so that traffic is routed to the correct target group depending on the URL that a user attempts to load.
 
+![image](https://github.com/user-attachments/assets/bf2e2e68-d044-4ee4-841d-92d0dcc6e877)
+
+![image](https://github.com/user-attachments/assets/0c423981-2b94-4181-a6ee-f3bcfdf459a7)
+
+![image](https://github.com/user-attachments/assets/ade5b932-4059-4596-8533-855e286bd89a)
+
+![image](https://github.com/user-attachments/assets/742f08fc-6f24-41c6-9f6c-621a11255108)
+
+![image](https://github.com/user-attachments/assets/f19c82f4-bbb8-4647-b2c9-8c64c499b51e)
+
+## Phase 8: Creating two Amazon ECS services
 
 
 
