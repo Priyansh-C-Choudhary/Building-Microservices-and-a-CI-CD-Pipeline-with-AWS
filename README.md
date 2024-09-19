@@ -82,4 +82,10 @@ Multi-AZ Deployment: No
 - Connectivity:
 Network Type: IPv4, Security Group: DBSecurityGroup
 
-### Now we have a database dumb of the required database, we need to configure it on the RDS.
+### Configure database dump on RDS
+
+Now we have a database dump of the required database, we need to configure it on RDS
+
+To access the RDS we will create a EC2 Instance and Install MySQL Client on it.
+
+
