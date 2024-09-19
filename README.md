@@ -120,4 +120,7 @@ scp -i <"Path to Pem File"> path\to\your_dump_file.sql ubuntu@<public ip>:~
 Third, Upload the dump file to RDS
 ```
 mysql -h <db endpoint> -u your-username -p
+EXIT;
+mysql -h <db endpoint> -u your-username -p your_database_name < coffee_database_dump.sql
+
 ```
