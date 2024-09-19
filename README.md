@@ -1,4 +1,4 @@
-# Building-Microservices-and-a-CI-CD-Pipeline-with-AWS
+ # Building-Microservices-and-a-CI-CD-Pipeline-with-AWS
 AWS Academy Lab Project - Microservices and CI/CD Pipeline Builder [92187]
 
 In this project, we are challenged to use at least 11 AWS offerings, including some that might be new to you, to build a microservices and continuous integration and continuous development (CI/CD) solution. 
@@ -66,9 +66,9 @@ Create a security group for the EC2 Nodes:
 Create a security group for the database:
 ![image](https://github.com/user-attachments/assets/1739b748-d705-4b1b-9e50-ab504e300af2)
 
-## Phase 3: Setting up the MySQL RDS Database
+## Phase 3: Setting up the MySQL RDS Database and upload the code
 
-### Provisioning
+### Task 3.1: Provisioning
 ![image](https://github.com/user-attachments/assets/40bc0388-6e01-496b-893f-1284de7214a7)
 
 Setup The RDS Database with following configurations:
@@ -82,7 +82,7 @@ Multi-AZ Deployment: No
 - Connectivity:
 Network Type: IPv4, Security Group: DBSecurityGroup
 
-### Configure database dump on RDS
+### Task 3.2: Configure database dump on RDS
 
 Now we have a database dump of the required database, we need to configure it on RDS
 
@@ -129,6 +129,10 @@ mysql -h <db endpoint> -u your-username -p < coffee_database_dump.sql
 ![image](https://github.com/user-attachments/assets/e936ba0b-b69d-4ec7-9993-46d0b895eb1b)
 
 Now the databse is ready
+
+### Task 3.3: Upload the monolithic application code
+
+Follow the steps as in Task 3.2 to similarly upload the code on the ec2 instance
 
 ## Phase 4: Creating a development environment and checking code into a Git repository
 
