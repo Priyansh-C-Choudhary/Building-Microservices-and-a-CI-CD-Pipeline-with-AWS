@@ -134,6 +134,9 @@ Now the databse is ready
 
 Follow the steps as in Task 3.2 to similarly upload the code on the ec2 instance
 
+![image](https://github.com/user-attachments/assets/d4c55a74-4c7f-4d75-b129-c1f604f1810a)
+
+
 ## Phase 4: Creating a development environment and checking code into a Git repository
 
 ### Task 4.1: Create an AWS Cloud9 IDE as your work environment
@@ -150,5 +153,8 @@ Follow the steps as in Task 3.2 to similarly upload the code on the ec2 instance
 scp -r -i ~/environment/key.pem ubuntu@$appServerPrivIp:/home/ubuntu/resources/codebase_partner/* ~/environment/temp/
 ```
 - In the file browser of the IDE, verify that the source files for the application have been copied to the temp directory on the AWS Cloud9 instance.
-![image](https://github.com/user-attachments/assets/bd8c0628-24bc-4f8a-8795-eaa04ebe84a1)
+![image](https://github.com/user-attachments/assets/615fae0a-d179-49d5-a2fc-296d8782c0e5)
+
+### Task 4.3: Create working directories with starter code for the two microservices
+
 
