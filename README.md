@@ -157,4 +157,30 @@ scp -r -i ~/environment/key.pem ubuntu@$appServerPrivIp:/home/ubuntu/resources/c
 
 ### Task 4.3: Create working directories with starter code for the two microservices
 
+Split the monolithic application into two microservices named customer and employee
 
+![image](https://github.com/user-attachments/assets/a5b43038-c71a-44ef-bd71-07ab319fef7d)
+
+![image](https://github.com/user-attachments/assets/d89dc7ab-1a4d-44c7-afcf-9a65d778c941)
+
+### Task 4.4: Create a Git repository for the microservices code and push the code to CodeCommit
+
+![image](https://github.com/user-attachments/assets/7077c19c-3717-4fd9-9a28-c8ae4f20d77a)
+
+![image](https://github.com/user-attachments/assets/9527a2e1-37ba-42e0-b8c6-b1aaa93dcc74)
+
+![image](https://github.com/user-attachments/assets/96c4600a-1474-4e12-aa61-088fc313cbe1)
+
+![image](https://github.com/user-attachments/assets/7284dc26-ba04-4246-a7b9-bf8b21d9bbd7)
+
+## Phase 5: Configuring the application as two microservices and testing them in Docker containers
+
+Task 5.1: Adjust the AWS Cloud9 instance security group settings
+
+![image](https://github.com/user-attachments/assets/019bf92f-ff89-47d6-9513-d3dd63191b05)
+
+Task 5.2: Modify the source code of the customer microservice
+
+![image](https://github.com/user-attachments/assets/0c593bc9-1762-4e83-be60-41621f2ef949)
+
+![image](https://github.com/user-attachments/assets/f123f2c7-0dd0-4824-90f9-0e71bb98a0c9)
