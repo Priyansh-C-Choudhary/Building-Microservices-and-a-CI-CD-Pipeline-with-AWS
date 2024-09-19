@@ -68,6 +68,7 @@ Create a security group for the database:
 
 ## Phase 3: Setting up the MySQL RDS Database
 
+### Provisioning
 ![image](https://github.com/user-attachments/assets/40bc0388-6e01-496b-893f-1284de7214a7)
 
 Setup The RDS Database with following configurations:
@@ -80,3 +81,5 @@ Type: General Purpose SSD (gp2), Allocated Storage: 20 GiB
 Multi-AZ Deployment: No
 - Connectivity:
 Network Type: IPv4, Security Group: DBSecurityGroup
+
+### Now we have a database dumb of the required database, we need to configure it on the RDS.
