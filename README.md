@@ -68,6 +68,9 @@ Create a security group for the database:
 Create a security group for the Application Load Balancer:
 ![image](https://github.com/user-attachments/assets/19aa4a1a-e263-432b-b940-46a9abbd18ca)
 
+IAM Roles:
+![image](https://github.com/user-attachments/assets/435fcbd2-1f27-4eaa-a6cb-9f4194a4309b)
+![image](https://github.com/user-attachments/assets/461c2475-1081-496f-b1ad-60eacb94a36e)
 
 ## Phase 3: Setting up the MySQL RDS Database and upload the code
 
@@ -326,12 +329,40 @@ In this task, we will create an Application Load Balancer. we will also define t
 ## Phase 8: Creating two Amazon ECS services
 In this phase, we will create a service in Amazon ECS for each microservice.
 
-Task 7.1: Create the ECS service for the customer 7 employee microservice
+Task 7.1: Create the ECS service for the customer & employee microservice
 
 ![image](https://github.com/user-attachments/assets/2e946551-da11-4a23-8670-7bd09cf05017)
 
 ![image](https://github.com/user-attachments/assets/52def829-780f-42c4-a952-74adefdd2145)
 
-## Phase 8: Configuring CodeDeploy and CodePipeline
+## Phase 9: Configuring CodeDeploy and CodePipeline
+
+Task 8.1: Create a CodeDeploy application and deployment groups
+
+A CodeDeploy application is a collection of deployment groups and revisions. A deployment group specifies an Amazon ECS service, load balancer, optional test listener, and two target groups. A group specifies when to reroute traffic to the replacement task set, and when to terminate the original task set and Amazon ECS application after a successful deployment.
+
+![image](https://github.com/user-attachments/assets/435eaf80-3cd1-4733-b07b-d6eba0a37f87)
+
+![image](https://github.com/user-attachments/assets/2c2c04c6-c97c-443f-8b3d-074e9bc017cd)
+
+Task 8.2: Create a pipeline for the customer microservice
+
+In this task, we will create a pipeline to update the customer microservice. When we first define the pipeline, we will configure CodeCommit as the source and CodeDeploy as the service that is responsible for deployment. we will then edit the pipeline to add the Amazon ECR service as a second source.
+
+With an Amazon ECS blue/green deployment, which we will specify in this task, we provision a new set of containers, which CodeDeploy installs the latest version of wer application on. CodeDeploy then reroutes load balancer traffic from an existing set of containers, which run the previous version of wer application, to the new set of containers, which run the latest version. After traffic is rerouted to the new containers, the existing containers can be terminated. With a blue/green deployment, we can test the new application version before sending production traffic to it.
+
+![image](https://github.com/user-attachments/assets/2ba33d65-9307-4354-bd8a-1840680e5ea2)
+![image](https://github.com/user-attachments/assets/0fa1aed1-6332-4cce-ad2e-49394f2dd283)
+![image](https://github.com/user-attachments/assets/71484c5f-ad06-496b-a92f-e8d1c14b1b64)
+
+Task 8.3: Test the CI/CD pipeline for the customer microservice
+![image](https://github.com/user-attachments/assets/c6c9d670-1c3f-43a6-b7a9-e697d206f662)
+![image](https://github.com/user-attachments/assets/92e471ec-f4a4-4a25-a0b5-f355f104d9e1)
+![image](https://github.com/user-attachments/assets/f478a49c-179f-4032-bfd8-eb31fbdcf551)
+![image](https://github.com/user-attachments/assets/252a16cc-4e33-46a6-b854-50e4a73a684e)
+
+
+
+
 
 
