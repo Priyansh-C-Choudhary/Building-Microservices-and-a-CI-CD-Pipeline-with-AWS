@@ -105,5 +105,6 @@ sudo apt install mysql-client -y
 To upload the sqldump file on the EC2 isntance, we first connect to the ec2 machine through our Local Machine using SSH
 Commands:
 ```
-ssh -i "C:\Users\Overlord\Downloads\databasekey.pem" ec2-user@35.153.199.246
+ssh -i <"Path to Pem File"> ec2-user@<public ip>
+
 ```
