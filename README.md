@@ -108,7 +108,12 @@ Commands:
 ssh -i <"Path to Pem File"> ubuntu@<public ip>
 logout
 ```
+![image](https://github.com/user-attachments/assets/ee527122-1650-413d-b545-f70318052600)
+
+
 Second, Upload the Dump File to EC2
 ```
 scp -i <"Path to Pem File"> path\to\your_dump_file.sql ubuntu@<public ip>:~
 ```
+![image](https://github.com/user-attachments/assets/d5d1a489-2015-4244-b199-b212ca19d345)
+
