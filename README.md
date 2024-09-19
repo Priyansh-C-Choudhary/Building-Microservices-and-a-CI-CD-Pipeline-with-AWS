@@ -89,7 +89,7 @@ Now we have a database dump of the required database, we need to configure it on
 To access the RDS we will create a EC2 Instance and Install MySQL Client on it.
 
 EC2 Instance Details:
-![image](https://github.com/user-attachments/assets/f33c04ad-3727-4853-a404-86a7f6c9e6c5)
+![image](https://github.com/user-attachments/assets/b2665c86-7499-4810-8f41-db02caacc0db)
 
 Note: For The Security Group Choose EC2Node Security Group
 
