@@ -110,5 +110,5 @@ ssh -i <"Path to Pem File"> ubuntu@<public ip>
 ```
 Second, Upload the Dump File to EC2
 ```
-scp -i <"Path to Pem File"> path\to\your_dump_file.sql eubuntu@<public ip>:~
+scp -i <"Path to Pem File"> path\to\your_dump_file.sql ubuntu@<public ip>:~
 ```
