@@ -35,9 +35,7 @@ We have also been challenged to develop a CI/CD pipeline to automatically deploy
 
 ![image](https://github.com/user-attachments/assets/e1b14fec-a9e0-4a60-afa8-5e27768883f0)
 
-## Phase 1: Planning the design and estimating cost
-
-### Task 1.1: Create an architecture diagram
+## Phase 1: Planning the design
 
 We will be using the following services:
 1. AWS Cloud9 environment
@@ -55,8 +53,16 @@ We will be using the following services:
 Below is a basic architectural diagram usinng draw.io
 ![Presentation1](https://github.com/user-attachments/assets/8a3faa48-bb4c-4147-aa61-97fb508b9e7a)
 
-### Task 1.2: Cost Estimation
-
-
 ## Phase 2: Setup the networking required
+
+The setup will look like this:
+Create a VPC with 2 Public and 2 Private Subnets and 1 Internet Gateway:
+![image](https://github.com/user-attachments/assets/3d6eb191-74b7-48fe-b39a-0fa865eaa358)
+Create a security group for the EC2 Nodes:
+![image](https://github.com/user-attachments/assets/3c73b2ff-c30b-4705-9965-20433c19a58b)
+Create a security group for the database:
+![image](https://github.com/user-attachments/assets/1739b748-d705-4b1b-9e50-ab504e300af2)
+
+## Phase 3: Setting up the MySQL RDS Database
+
 
