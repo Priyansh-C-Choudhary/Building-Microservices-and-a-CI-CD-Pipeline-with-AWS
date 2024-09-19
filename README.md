@@ -91,5 +91,11 @@ To access the RDS we will create a EC2 Instance and Install MySQL Client on it.
 EC2 Instance Details:
 ![image](https://github.com/user-attachments/assets/b2665c86-7499-4810-8f41-db02caacc0db)
 
-Note: For The Security Group Choose EC2Node Security Group
+*Note: For The Security Group Choose EC2Node Security Group
 
+Connect to the EC2 Instance and run the following commands:
+```
+sudo apt update
+sudo apt install nmap <db endpoint> - used to check to verify that the database can be reached from the rdsdatabaseaccess instance on the standard MySQL port number.
+sudo apt install mysql-client -y
+```
