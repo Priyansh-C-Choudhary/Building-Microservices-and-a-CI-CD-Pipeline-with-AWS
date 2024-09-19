@@ -1,7 +1,7 @@
  # Building-Microservices-and-a-CI-CD-Pipeline-with-AWS
 AWS Academy Lab Project - Microservices and CI/CD Pipeline Builder [92187]
 
-In this project, we are challenged to use at least 11 AWS offerings, including some that might be new to you, to build a microservices and continuous integration and continuous development (CI/CD) solution. 
+In this project, we are challenged to use at least 11 AWS offerings, including some that might be new to we, to build a microservices and continuous integration and continuous development (CI/CD) solution. 
 
 By the end of this project, we will be able to do the following:
 
@@ -25,7 +25,7 @@ Customers (the café franchise location managers) cannot seem to get enough of t
 
 Meanwhile, the employees in the café corporate office have been challenged to consistently source the highest-quality coffee beans. Recently, the leaders at the corporate office learned that one of their favorite coffee suppliers wants to sell her company. The café corporate managers jumped at the opportunity to buy the company. The acquired coffee supplier runs a coffee supplier listings application on an AWS account, as shown in the following image.
 
-The coffee suppliers application currently runs as a monolithic application. It has reliability and performance issues. That is one of the reasons that you have recently been hired to work in the café corporate office. In this project, we perform tasks that are associated with software development engineer (SDE), app developer, and cloud support engineer roles.
+The coffee suppliers application currently runs as a monolithic application. It has reliability and performance issues. That is one of the reasons that we have recently been hired to work in the café corporate office. In this project, we perform tasks that are associated with software development engineer (SDE), app developer, and cloud support engineer roles.
 
 We have been tasked to split the monolithic application into microservices, so that we can scale the services independently and allocate more compute resources to the services that experience the highest demand, with the goal of avoiding bottlenecks. A microservices design will also help avoid single points of failure, which could bring down the entire application in a monolithic design. With services isolated from one another, if one microservice becomes temporarily unavailable, the other microservices might remain available.
 
@@ -65,6 +65,9 @@ Create a security group for the EC2 Nodes:
 ![image](https://github.com/user-attachments/assets/3c73b2ff-c30b-4705-9965-20433c19a58b)
 Create a security group for the database:
 ![image](https://github.com/user-attachments/assets/1739b748-d705-4b1b-9e50-ab504e300af2)
+Create a security group for the Application Load Balancer:
+![image](https://github.com/user-attachments/assets/19aa4a1a-e263-432b-b940-46a9abbd18ca)
+
 
 ## Phase 3: Setting up the MySQL RDS Database and upload the code
 
@@ -113,7 +116,7 @@ logout
 
 Second, Upload the Dump File to EC2
 ```
-scp -i <"Path to Pem File"> path\to\your_dump_file.sql ubuntu@<public ip>:~
+scp -i <"Path to Pem File"> path\to\wer_dump_file.sql ubuntu@<public ip>:~
 ```
 ![image](https://github.com/user-attachments/assets/d5d1a489-2015-4244-b199-b212ca19d345)
 
@@ -121,11 +124,11 @@ Third, Upload the dump file to RDS
 
 Use these commands in the ec2
 ```
-mysql -h <db endpoint> -u your-username -p
+mysql -h <db endpoint> -u wer-username -p
 EXIT;
-mysql -h <db endpoint> -u your-username -p < coffee_database_dump.sql
+mysql -h <db endpoint> -u wer-username -p < coffee_database_dump.sql
 ```
-*Note: You might need to remove some advanced commands, due to some permission issue. (I recommend using GithHub Copilot/ChatGPT/Phind for solving the error)
+*Note: we might need to remove some advanced commands, due to some permission issue. (I recommend using GithHub Copilot/ChatGPT/Phind for solving the error)
 ![image](https://github.com/user-attachments/assets/e936ba0b-b69d-4ec7-9993-46d0b895eb1b)
 
 Now the databse is ready
@@ -139,15 +142,15 @@ Follow the steps as in Task 3.2 to similarly upload the code on the ec2 instance
 
 ## Phase 4: Creating a development environment and checking code into a Git repository
 
-### Task 4.1: Create an AWS Cloud9 IDE as your work environment
+### Task 4.1: Create an AWS Cloud9 IDE as wer work environment
 ![image](https://github.com/user-attachments/assets/9b1ef1a8-6de8-42d2-9d59-b2587cc02126)
 ![image](https://github.com/user-attachments/assets/0eb65e92-6f92-4f43-8399-7567b29ba7fb)
 
-### Task 4.2: Copy the application code to your IDE
-- Upload the .pem file to your AWS Cloud9 IDE, and use the Linux ```chmod 400 <file name>``` command to set the proper permissions on the file so that you can use it to connect to an EC2 instance.
+### Task 4.2: Copy the application code to wer IDE
+- Upload the .pem file to wer AWS Cloud9 IDE, and use the Linux ```chmod 400 <file name>``` command to set the proper permissions on the file so that we can use it to connect to an EC2 instance.
 - Create a temp directory on the AWS Cloud9 instance at /home/ec2-user/environment/temp.
 - From the Amazon EC2 console, retrieve the private IPv4 address of the ec2 instance.
-- Use the Linux scp command in the Bash terminal on the AWS Cloud9 instance to copy the source code for the node application from the MonolithicAppServer instance to the temp directory that you created on the AWS Cloud9 instance.
+- Use the Linux scp command in the Bash terminal on the AWS Cloud9 instance to copy the source code for the node application from the MonolithicAppServer instance to the temp directory that we created on the AWS Cloud9 instance.
 - The following snippet provides an example scp command:
 ```
 scp -r -i ~/environment/key.pem ubuntu@$appServerPrivIp:/home/ubuntu/resources/codebase_partner/* ~/environment/temp/
@@ -298,6 +301,17 @@ Task 5.6: Update files and check them into CodeCommit
 
 ## Phase 7: Creating target groups and an Application Load Balancer
 
+Task 6.1: Create four target groups
+
+In this task, we will create four target groups—two for each microservice. Because we will configure a blue/green deployment, CodeDeploy requires two target groups for each deployment group.
+
+![image](https://github.com/user-attachments/assets/b26aef6a-741c-42b9-a05a-ac748b05c8c7)
+
+![image](https://github.com/user-attachments/assets/08838006-28a7-4360-bc28-6d115e15fa83)
+
+Task 6.2: Create a security group and an Application Load Balancer, and configure rules to route traffic
+
+In this task, we will create an Application Load Balancer. we will also define two listeners for the load balancer: one on port 80 and another on port 8080. For each listener, we will then define path-based routing rules so that traffic is routed to the correct target group depending on the URL that a user attempts to load.
 
 
 
