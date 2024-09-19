@@ -53,11 +53,14 @@ We will be using the following services:
 Below is a basic architectural diagram usinng draw.io
 ![Presentation1](https://github.com/user-attachments/assets/8a3faa48-bb4c-4147-aa61-97fb508b9e7a)
 
-## Phase 2: Setup the networking required
+## Phase 2: Setup the networking and security groups required
 
+### Networking
 The setup will look like this:
 Create a VPC with 2 Public and 2 Private Subnets and 1 Internet Gateway:
 ![image](https://github.com/user-attachments/assets/3d6eb191-74b7-48fe-b39a-0fa865eaa358)
+
+### Security Groups
 Create a security group for the EC2 Nodes:
 ![image](https://github.com/user-attachments/assets/3c73b2ff-c30b-4705-9965-20433c19a58b)
 Create a security group for the database:
@@ -65,4 +68,14 @@ Create a security group for the database:
 
 ## Phase 3: Setting up the MySQL RDS Database
 
-
+![image](https://github.com/user-attachments/assets/40bc0388-6e01-496b-893f-1284de7214a7)
+Setup The RDS Database with following configurations:
+- DB Instance Identifier: supplierdb
+- DB Engine Version: 8.0.35
+- DB Instance Class: db.t3.micro, 2 vCPUs, 1 GiB RAM, Up to 2,085 Mbps network
+- Storage:
+Type: General Purpose SSD (gp2), Allocated Storage: 20 GiB
+- Availability & Durability:
+Multi-AZ Deployment: No
+- Connectivity:
+Network Type: IPv4, Security Group: DBSecurityGroup
