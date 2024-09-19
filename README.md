@@ -125,6 +125,7 @@ mysql -h <db endpoint> -u your-username -p
 EXIT;
 mysql -h <db endpoint> -u your-username -p < coffee_database_dump.sql
 ```
+*Note: You might need to remove some advanced commands, due to some permission issue. (I recommend using GithHub Copilot/ChatGPT/Phind for solving the error)
 ![image](https://github.com/user-attachments/assets/e936ba0b-b69d-4ec7-9993-46d0b895eb1b)
 
 Now the databse is ready
