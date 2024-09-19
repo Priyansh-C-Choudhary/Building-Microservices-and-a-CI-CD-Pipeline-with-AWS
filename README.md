@@ -360,7 +360,18 @@ Task 8.3: Test the CI/CD pipeline for the customer microservice
 ![image](https://github.com/user-attachments/assets/92e471ec-f4a4-4a25-a0b5-f355f104d9e1)
 ![image](https://github.com/user-attachments/assets/f478a49c-179f-4032-bfd8-eb31fbdcf551)
 ![image](https://github.com/user-attachments/assets/252a16cc-4e33-46a6-b854-50e4a73a684e)
+![image](https://github.com/user-attachments/assets/cac9fa97-dd98-4c60-bd20-b703f7009135)
+![image](https://github.com/user-attachments/assets/a4a3216a-9187-4e20-9df6-5f5d40759ffc)
+![image](https://github.com/user-attachments/assets/aa0e8c2f-7799-4ce9-b18d-6f702b1540f8)
 
+Task 8.4: Create a pipeline for the employee microservice
+![image](https://github.com/user-attachments/assets/6ee09199-ee03-4a70-87a3-740b0a5fff7a)
+
+Task 8.5: Test the CI/CD pipeline for the employee microservice
+![image](https://github.com/user-attachments/assets/e0eb7ae4-465f-4e51-ab01-92795257f7df)
+![image](https://github.com/user-attachments/assets/6c71c62d-0914-4e88-8a13-052d6c825451)
+
+## Phase 10: Adjusting the microservice code to cause a pipeline to run again
 
 
 
