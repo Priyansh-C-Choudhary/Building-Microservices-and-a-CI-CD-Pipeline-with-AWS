@@ -373,7 +373,47 @@ Task 8.5: Test the CI/CD pipeline for the employee microservice
 
 ## Phase 10: Adjusting the microservice code to cause a pipeline to run again
 
+In this phase, we will experience the benefits of the microservices architecture and the CI/CD pipeline that we built. we will begin by adjusting the load balancer listener rules that are related to the employee microservice. we will also update the source code of the employee microservice, generate a new Docker image, and push that image to Amazon ECR, which will cause the pipeline to run and update the production deployment. we will also scale up the number of containers that support the customer microservice.
 
+Task 9.1: Limit access to the employee microservice (Optional)
 
+In this task, we will limit access to the employee microservice to only people who try to connect to it from a specific IP address. By limiting the source IP to a specific IP address, only users who access the application from that IP can access the pages, and edit or delete supplier entries.
 
+![image](https://github.com/user-attachments/assets/20ca7900-d56b-4574-9e22-eb687dd5efcb)
+![image](https://github.com/user-attachments/assets/ddc54748-4fac-4359-aefb-e7940bd5c8db)
+![image](https://github.com/user-attachments/assets/eb13a418-b95d-4666-9965-02a443f3157f)
+![image](https://github.com/user-attachments/assets/d7e92aed-3808-49c0-984e-03dd2e69c599)
 
+Task 9.2: Adjust the UI for the employee microservice and push the updated image to Amazon ECR
+
+```
+docker rm -f employee_1 
+cd ~/environment/microservices/employee
+docker build --tag employee .
+dbEndpoint=$(cat ~/environment/microservices/employee/app/config/config.js | grep 'APP_DB_HOST' | cut -d '"' -f2)
+echo $dbEndpoint
+account_id=$(aws sts get-caller-identity |grep Account|cut -d '"' -f4)
+echo $account_id
+docker tag employee:latest $account_id.dkr.ecr.us-east-1.amazonaws.com/employee:latest
+```
+![image](https://github.com/user-attachments/assets/78ec7124-0740-4726-a3f5-f83a67d33617)
+
+```
+#refresh credentials in case needed
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin $account_id.dkr.ecr.us-east-1.amazonaws.com
+#push the image
+docker push $account_id.dkr.ecr.us-east-1.amazonaws.com/employee:latest
+```
+![image](https://github.com/user-attachments/assets/ca7e17df-2906-4d84-9477-d5e80fbfb95b)
+
+Task 9.3: Confirm that the employee pipeline ran and the microservice was updated
+![image](https://github.com/user-attachments/assets/9d6350e5-b6cc-45d5-9628-979dceaca333)
+
+Task 9.4: Test access to the employee microservice
+![image](https://github.com/user-attachments/assets/e8d34741-2e9a-459c-87a1-84b92c17033c)
+
+Task 9.5: Scale the customer microservice
+![image](https://github.com/user-attachments/assets/624d8399-fdd3-4c5c-9ef7-99dd6de7e809)
+![image](https://github.com/user-attachments/assets/96bf2de1-8af1-4558-979d-75e2c8a5ae6f)
+
+Hence, this is the end of our project.
