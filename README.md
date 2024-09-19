@@ -147,7 +147,7 @@ Follow the steps as in Task 3.2 to similarly upload the code on the ec2 instance
 - Use the Linux scp command in the Bash terminal on the AWS Cloud9 instance to copy the source code for the node application from the MonolithicAppServer instance to the temp directory that you created on the AWS Cloud9 instance.
 - The following snippet provides an example scp command:
 ```
-scp -r -i ~/environment/labsuser.pem ubuntu@$appServerPrivIp:/home/ubuntu/resources/codebase_partner/* ~/environment/temp/
+scp -r -i ~/environment/key.pem ubuntu@$appServerPrivIp:/home/ubuntu/resources/codebase_partner/* ~/environment/temp/
 ```
 - In the file browser of the IDE, verify that the source files for the application have been copied to the temp directory on the AWS Cloud9 instance.
 
