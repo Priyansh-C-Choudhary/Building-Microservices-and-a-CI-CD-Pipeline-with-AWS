@@ -106,7 +106,7 @@ First, connect to the ec2 machine through our Local Machine using SSH
 Commands:
 ```
 ssh -i <"Path to Pem File"> ubuntu@<public ip>
-
+logout
 ```
 Second, Upload the Dump File to EC2
 ```
