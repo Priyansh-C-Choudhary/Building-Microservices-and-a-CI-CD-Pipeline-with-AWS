@@ -324,8 +324,14 @@ In this task, we will create an Application Load Balancer. we will also define t
 ![image](https://github.com/user-attachments/assets/f19c82f4-bbb8-4647-b2c9-8c64c499b51e)
 
 ## Phase 8: Creating two Amazon ECS services
+In this phase, we will create a service in Amazon ECS for each microservice.
 
+Task 7.1: Create the ECS service for the customer 7 employee microservice
 
+![image](https://github.com/user-attachments/assets/2e946551-da11-4a23-8670-7bd09cf05017)
 
+![image](https://github.com/user-attachments/assets/52def829-780f-42c4-a952-74adefdd2145)
+
+## Phase 8: Configuring CodeDeploy and CodePipeline
 
 
