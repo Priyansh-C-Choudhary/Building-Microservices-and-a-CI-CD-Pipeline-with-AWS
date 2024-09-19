@@ -123,6 +123,5 @@ Use these commands in the ec2
 ```
 mysql -h <db endpoint> -u your-username -p
 EXIT;
-mysql -h <db endpoint> -u your-username -p your_database_name < coffee_database_dump.sql
-
+mysql -h <db endpoint> -u admin -p < coffee_database_dump.sql
 ```
