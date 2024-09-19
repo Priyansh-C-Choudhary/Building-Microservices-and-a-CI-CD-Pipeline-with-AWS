@@ -133,3 +133,10 @@ Now the databse is ready
 ## Phase 4: Creating a development environment and checking code into a Git repository
 
 ### Task 4.1: Create an AWS Cloud9 IDE as your work environment
+![image](https://github.com/user-attachments/assets/9b1ef1a8-6de8-42d2-9d59-b2587cc02126)
+![image](https://github.com/user-attachments/assets/0eb65e92-6f92-4f43-8399-7567b29ba7fb)
+
+### Task 4.2: Copy the application code to your IDE
+- Upload the .pem file to your AWS Cloud9 IDE, and use the Linux ```chmod 400 <file name>``` command to set the proper permissions on the file so that you can use it to connect to an EC2 instance.
+- Create a temp directory on the AWS Cloud9 instance at /home/ec2-user/environment/temp.
+- From the Amazon EC2 console, retrieve the private IPv4 address of the rds instance.
