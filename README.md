@@ -150,4 +150,5 @@ Follow the steps as in Task 3.2 to similarly upload the code on the ec2 instance
 scp -r -i ~/environment/key.pem ubuntu@$appServerPrivIp:/home/ubuntu/resources/codebase_partner/* ~/environment/temp/
 ```
 - In the file browser of the IDE, verify that the source files for the application have been copied to the temp directory on the AWS Cloud9 instance.
+![image](https://github.com/user-attachments/assets/bd8c0628-24bc-4f8a-8795-eaa04ebe84a1)
 
