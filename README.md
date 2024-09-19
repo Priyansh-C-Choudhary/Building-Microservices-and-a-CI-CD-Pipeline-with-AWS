@@ -125,3 +125,5 @@ mysql -h <db endpoint> -u your-username -p
 EXIT;
 mysql -h <db endpoint> -u your-username -p < coffee_database_dump.sql
 ```
+![image](https://github.com/user-attachments/assets/e936ba0b-b69d-4ec7-9993-46d0b895eb1b)
+
