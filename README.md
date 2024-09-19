@@ -264,6 +264,42 @@ Task 5.1: Create ECR repositories and upload the Docker images
 
 ![image](https://github.com/user-attachments/assets/98a11345-02cf-4ad5-bfe6-541867014694)
 
+Task 5.2: Create an ECS cluster
+
+![image](https://github.com/user-attachments/assets/26e93245-d1bf-40e3-b756-8bcae8cdd516)
+
+![image](https://github.com/user-attachments/assets/811794fc-70d5-48b5-81f8-a7981acc0c3d)
+
+![image](https://github.com/user-attachments/assets/a880a194-ca4b-47b9-be4e-765bff63b123)
+
+Task 5.3: Create a CodeCommit repository to store deployment files
+
+![image](https://github.com/user-attachments/assets/b9043d2f-ae3e-48f3-8aba-3c2583e7a771)
+
+![image](https://github.com/user-attachments/assets/ccf48218-0c66-4191-9950-cb9d7876e8c7)
+
+Task 5.4: Create task definition files for each microservice and register them with Amazon ECS
+
+![image](https://github.com/user-attachments/assets/08e80d74-f7ca-482b-9ad9-6cfbee05c3b6)
+
+![image](https://github.com/user-attachments/assets/1f656c48-805b-46c7-81e6-e8985814caf3)
+
+![image](https://github.com/user-attachments/assets/33d4d402-9b7e-4d03-9035-177867334ad7)
+
+Task 5.5: Create AppSpec files for CodeDeploy for each microservice
+
+![image](https://github.com/user-attachments/assets/6f1cb05e-4c72-4118-8d46-a7c9f8a5a0ad)
+
+Task 5.6: Update files and check them into CodeCommit
+
+![image](https://github.com/user-attachments/assets/8935eb81-b10a-4c4e-a001-c658e5d81891)
+
+![image](https://github.com/user-attachments/assets/48b8b493-e847-4c6d-a9f9-f36d5317a24d)
+
+## Phase 7: Creating target groups and an Application Load Balancer
+
+
+
 
 
 
