@@ -69,6 +69,7 @@ Create a security group for the database:
 ## Phase 3: Setting up the MySQL RDS Database
 
 ![image](https://github.com/user-attachments/assets/40bc0388-6e01-496b-893f-1284de7214a7)
+
 Setup The RDS Database with following configurations:
 - DB Instance Identifier: supplierdb
 - DB Engine Version: 8.0.35
