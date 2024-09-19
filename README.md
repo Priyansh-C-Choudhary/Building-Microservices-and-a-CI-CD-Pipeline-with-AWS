@@ -184,3 +184,87 @@ Task 5.2: Modify the source code of the customer microservice
 ![image](https://github.com/user-attachments/assets/0c593bc9-1762-4e83-be60-41621f2ef949)
 
 ![image](https://github.com/user-attachments/assets/f123f2c7-0dd0-4824-90f9-0e71bb98a0c9)
+
+![image](https://github.com/user-attachments/assets/60ab39a2-f543-47e2-9c30-013b14c68dca)
+
+![image](https://github.com/user-attachments/assets/2c77f404-c1e3-4420-a898-235f61834ed4)
+
+![image](https://github.com/user-attachments/assets/6b5d2ce1-2ab6-4b61-97d8-31cd6a2eb401)
+
+![image](https://github.com/user-attachments/assets/5b847150-fe81-41ad-85c8-046b9f1e6ce4)
+
+Task 4.3: Create the customer microservice Dockerfile and launch a test container
+
+
+![image](https://github.com/user-attachments/assets/195faf8e-18f8-44d0-a2db-c4969eef42f7)
+
+![image](https://github.com/user-attachments/assets/f4656aa5-3f6f-4879-ade1-ae91db9b4d48)
+
+![image](https://github.com/user-attachments/assets/69e54c5d-caed-4cf2-a186-31ce716103b8)
+
+![image](https://github.com/user-attachments/assets/968c98c7-4afb-4f0b-a6c8-ae33d2ab746f)
+
+![image](https://github.com/user-attachments/assets/84f7eaa9-a7bf-45ca-aaed-908eea30348a)
+
+![image](https://github.com/user-attachments/assets/e173ffb8-3d74-4fa7-877a-f3a3c48fe701)
+
+![image](https://github.com/user-attachments/assets/e302f016-1a7f-4982-9596-d2f259726218)
+
+![image](https://github.com/user-attachments/assets/89439436-4586-44aa-92c8-162b79b60c3a)
+
+Task 4.4: Modify the source code of the employee microservice
+
+![image](https://github.com/user-attachments/assets/53d2a2e1-cfa9-4940-a1eb-8ead531d9a0d)
+
+![image](https://github.com/user-attachments/assets/065d3aca-b871-45eb-8afc-e83e9686e2f6)
+
+![image](https://github.com/user-attachments/assets/fbc5e090-2f5b-4195-9689-04bc543297d4)
+
+![image](https://github.com/user-attachments/assets/ec51064a-9723-4898-8f60-1af96a9924e6)
+
+![image](https://github.com/user-attachments/assets/128052e8-3aa7-4dde-b1a4-3cbce6c52cf6)
+
+![image](https://github.com/user-attachments/assets/749f412e-26f9-4d36-ae6a-c5faeb6f61a2)
+
+Task 4.5: Create the employee microservice Dockerfile and launch a test container
+
+![image](https://github.com/user-attachments/assets/ffd8c4ec-fb28-4a33-ad04-0d8fa8935f2e)
+
+![image](https://github.com/user-attachments/assets/d5f1dc6b-90a4-47e4-9f91-0a792cd3ad76)
+
+![image](https://github.com/user-attachments/assets/1d446b62-9ceb-4bb2-9c5a-1acca4b46608)
+
+![image](https://github.com/user-attachments/assets/8768b9a5-ab97-45ee-be0f-05642f4c301a)
+
+Task 4.6: Adjust the employee microservice port and rebuild the image
+
+![image](https://github.com/user-attachments/assets/5725164f-5df8-43c5-a6b0-b613dcc499c0)
+
+Task 4.7: Check code into CodeCommit
+
+![image](https://github.com/user-attachments/assets/fd83a44a-0bf1-4cb0-aa5f-44d60e454693)
+
+![image](https://github.com/user-attachments/assets/565f07d2-7694-45b2-90ad-84345a6e8669)
+
+## Phase 6: Creating ECR repositories, an ECS cluster, task definitions, and AppSpec files
+
+Task 5.1: Create ECR repositories and upload the Docker images
+
+![image](https://github.com/user-attachments/assets/1ca76114-bb0c-4fe6-ae43-3d3b9c815582)
+
+![image](https://github.com/user-attachments/assets/20407d5b-8765-4a27-af81-a65ba03351a4)
+
+![image](https://github.com/user-attachments/assets/427e3171-03b2-41f2-b267-ac57cdaca730)
+
+![image](https://github.com/user-attachments/assets/7c111b98-1fb6-4afb-8450-c2bc0912dc64)
+
+![image](https://github.com/user-attachments/assets/11b44b5a-91e4-4b8d-8f87-5bb1f94bab7e)
+
+![image](https://github.com/user-attachments/assets/a36ef388-32b4-470c-a4b4-aa2211cdaa14)
+
+![image](https://github.com/user-attachments/assets/98a11345-02cf-4ad5-bfe6-541867014694)
+
+
+
+
+
