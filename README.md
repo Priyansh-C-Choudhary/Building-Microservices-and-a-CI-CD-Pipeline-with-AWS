@@ -117,3 +117,7 @@ scp -i <"Path to Pem File"> path\to\your_dump_file.sql ubuntu@<public ip>:~
 ```
 ![image](https://github.com/user-attachments/assets/d5d1a489-2015-4244-b199-b212ca19d345)
 
+Third, Upload the dump file to RDS
+```
+mysql -h <db endpoint> -u your-username -p
+```
